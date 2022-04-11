@@ -42,6 +42,19 @@ public class Mars {
             }
         }
 
+        //Beginning Luggage questions
+        //Asking about luggage
+        System.out.println(username+", how many bags do you plan to take with you?");
+        int luggageCount = input.nextInt();
+
+        //Checking bag count
+        if (luggageCount <= 2) {
+            System.out.println("You seem mindful of fuel economy, your prudence will serve you on the red planet.");
+        } else if (luggageCount > 2) {
+            System.out.println("This isn't a luxury cruise on a private yacht.");
+            System.out.println("Please limit your luggage to two items");
+        }
+
 
     }
 }
